@@ -1,0 +1,68 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #004f77;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.service {
+    flex-basis: calc(33.33% - 2rem);
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #004f77;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container-2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}

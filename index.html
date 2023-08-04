@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapok Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kapok Technology</h1>
+        <p>Technology Modernization Expertise</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <button id="emailButton">Contact</button>
+        <script>
+            const emailButton = document.getElementById("emailButton");
+    
+            emailButton.addEventListener("click", () => {
+                window.location.href = "mailto:kapoktechnology@gmail.com";
+            });
+        </script>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Kapok Technology</h2>
+        <p>We want to use our legacy technological expertise to partner with you to upskill your people and unblock your business</p>
+
+        <div class="services">
+            <div class="service">
+                <h3>Business and System Review</h3>
+                <p>We will work with you to understand your unity of purpose and the bottlenecks to it</p>
+            </div>
+            <div class="service">
+                <h3>Mentor Circle</h3>
+                <p>We will provide mentors to work with people across your organization</p>
+            </div>
+            <div class="service">
+                <h3>Legacy Modernization</h3>
+                <p>We will embed ourselves into your organization and drive business results through our modernization efforts</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h3>In our experience, legacy software is typically met with disdain and anxiety</h3>
+        <p>Here is how we define "legacy software" and why we love working with it</p>
+        <div class="service">
+            <p><abbr title="Has users or serves a useful function">Successful</abbr> software that is typically the backbone of it's business that hasn't been able to get the attention it deserves </p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Kapok Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>
