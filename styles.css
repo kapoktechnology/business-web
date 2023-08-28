@@ -1,68 +1,114 @@
-/* Reset default margin and padding */
-* {
+/* Reset some default styles */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Basic styling */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, nav, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background-color: #007acc;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #004f77;
-    padding: 1rem 0;
+    background-color: #444;
+    text-align: center;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
+    padding: 10px 20px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+nav a:hover {
+    background-color: #555;
 }
 
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2rem;
+.pointer {
+    cursor: pointer;
 }
 
-.service {
-    flex-basis: calc(33.33% - 2rem);
-    background-color: #f4f4f4;
-    padding: 1.5rem;
-    margin: 1rem;
-    text-align: center;
+main {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 }
 
 footer {
-    background-color: #004f77;
-    color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }
 
-.container-2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+/* Styling for sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+/* ... (Your existing styles) */
+
+#splash {
+    background: url('splash-background.jpeg') center/cover no-repeat;
+    color: #fff;
     text-align: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center top;
+    flex-direction: column;
+}
+
+.splash-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.splash-content2 {
+    background-color: #333;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.splash-content h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Define different heights for mobile and desktop views */
+@media (max-width: 768px) {
+    /* Mobile view */
+    #splash {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Desktop view */
+    #splash {
+        height: 70vh;
+    }
 }
