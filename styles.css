@@ -82,15 +82,12 @@ h2 {
 }
 
 .splash-content {
-    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow:#333 1px 0 10px;
     padding: 20px;
     border-radius: 10px;
 }
 
 .splash-content2 {
-    background-color: #333;
-    padding: 8px;
-    border-radius: 10px;
     display: block;
     margin-top: 1.33em;
     margin-bottom: 1.33em;
@@ -105,11 +102,37 @@ h2 {
     margin: 0;
 }
 
+/* Style for the principles section */
+#principles {
+    text-align: center;
+}
+
+.principles-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    display: block;
+    margin: auto;
+}
+
+
 /* Define different heights for mobile and desktop views */
 @media (max-width: 768px) {
     /* Mobile view */
     #splash {
         height: 50vh;
+    }
+    .principles-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -117,5 +140,10 @@ h2 {
     /* Desktop view */
     #splash {
         height: 70vh;
+    }
+    .principles-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
