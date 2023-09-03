@@ -24,15 +24,11 @@ header {
     text-align: center;
 }
 
-nav {
-    background-color: #444;
-    text-align: center;
-}
-
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    white-space: nowrap;
 }
 
 nav a:hover {
@@ -126,7 +122,7 @@ h2 {
 @media (max-width: 768px) {
     /* Mobile view */
     #splash {
-        height: 50vh;
+        height: 60vh;
     }
     .principles-icons {
         display: flex;
@@ -134,7 +130,16 @@ h2 {
         justify-content: center;
         flex-direction: column;
     }
+    nav {
+        background-color: #444;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
 }
+
 
 @media (min-width: 769px) {
     /* Desktop view */
@@ -144,6 +149,12 @@ h2 {
     .principles-icons {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav {
+        background-color: #444;
+        text-align: center;
+        display:flex;
         justify-content: center;
     }
 }
